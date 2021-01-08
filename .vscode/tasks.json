@@ -1,0 +1,72 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ROS: my_first_ros_pkg",
+            "type": "shell",
+            "command": "catkin_make",
+            "args": [
+                "--pkg",
+                "my_first_ros_pkg",
+                "-j4",
+                "-DCMAKE_BUILD_TYPE=Debug"
+            ],
+            "problemMatcher": "$gcc",
+            "options": {
+                "cwd": "${workspaceFolder}/../../"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "revealProblems": "onProblem",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "ROS: ros_tutorials_topic",
+            "type": "shell",
+            "command": "catkin_make",
+            "args": [
+                "--pkg",
+                "ros_tutorials_topic",
+                "-j4",
+                "-DCMAKE_BUILD_TYPE=Debug"
+            ],
+            "problemMatcher": "$gcc",
+            "options": {
+                "cwd": "${workspaceFolder}/../../"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "revealProblems": "onProblem",
+                "panel": "new"
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc build active file",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: /usr/bin/gcc"
+        }
+    ]
+}

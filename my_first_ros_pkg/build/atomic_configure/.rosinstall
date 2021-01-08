@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/taeyu/catkin_ws/src/example/my_first_ros_pkg/build/devel/setup.sh
